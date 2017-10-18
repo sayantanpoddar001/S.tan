@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Welcome to </title>
+<!-- css stylesheets -->
+<head>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="/js/angularjs/distributorindentlist.js"></script>
+</head>
+  
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  $(function () {
+   // $('#formdata').submit(function(){
+   $(document).ready(function(){
+      
+    var socket = io();
+    console.log('sending...');
+      socket.emit('receive message',localStorage.getItem('username'));
+      socket.on('send message',function(abc){
+        console.log('inside1');
+        alert(abc);
+        // return false;
+      })
+     
+  });
+  
+});
+</script>
+<body class="">
+<style>
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  </style>
+<!-- navigation bar -->
+<div id="removeid">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">About us</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+           <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav></div>
+</br></br></br></br></br></br>
+<!--io socket-->
+<!--<div ng-app="MyApp123">
+  <div ng-controller="MyCtrl123">-->
+    
+ <!-- </div>
+</div>-->
+<div class="container"  >
+<div ng-app="myAppr1" ng-controller="myCtrlr1">
+<div>
+       <input type="submit" class="btn btn-primary" ng-click="submit1()" value="Refresh"/>
+       </br></br></br>
+      <table  id="parent" class="table" border="1"> 
+     </table>
+      </div>
+   </div>
+  </div>
+
+<!-- footer --></br>
+
+<div  role="separator" class="divider"  ></div>
+
+<div class="jumbotron container-fluid">
+  <div class="col-xs-3 col-md-3">
+   <ul>
+    <li><span>Organization name</span></li>
+   </ul>
+  </div>
+   <div class="col-xs-3 col-md-3">
+   <ul>
+    <li><span>Organization name</span></li>
+   </ul>
+  </div>
+   <div class="col-xs-3 col-md-3">
+   <ul>
+    <li><span>Organization name</span></li>
+   </ul>
+  </div>
+   <div class="col-xs-3 col-md-3">
+   <ul>
+    <li><span>Organization name</span></li>
+   </ul>
+  </div>
+</div>
+</div>
+</div>
+<!-- firebase push notification-->
+<!--
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>-->
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+<script src="/js/firebase/firebasenotification.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

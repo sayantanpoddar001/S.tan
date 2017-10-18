@@ -1,0 +1,35 @@
+{
+  "name": "newprojectknex",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dpush": "^0.2.0",
+    "express": "~4.15.2",
+    "firebase": "^4.2.0",
+    "firebase-admin": "^5.2.1",
+    "generate-password": "^1.3.0",
+    "html": "^1.0.0",
+    "jade": "~1.11.0",
+    "knex": "^0.13.0",
+    "knex-migrate": "^1.3.0",
+    "knex-orm": "^1.2.0",
+    "morgan": "~1.8.1",
+    "node-datetime": "^2.0.0",
+    "node-excel-to-json": "0.0.3",
+    "node-wifi": "^1.2.5",
+    "nodemailer": "^4.0.1",
+    "pg": "^7.0.2",
+    "request": "^2.81.0",
+    "serve-favicon": "~2.4.2",
+    "socket.io": "^2.0.3",
+    "sqlite": "^2.8.0",
+    "thread": "0.0.2",
+    "xls-to-json-lc": "^0.3.4"
+  }
+}

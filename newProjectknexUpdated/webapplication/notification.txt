@@ -1,0 +1,9 @@
+{
+    "to":"fcpp5a4Gj0c:APA91bGsS9ZQoIsmb8-cmjxz-q0HQwiqm4aemIMWkU3ZSpJ_qziBS6jGwm2e5wElcon9Off0qxmoQWIFB5tUnFd7tiQfjnp85ZGscSZXGDMu_Tvue5xzX5p2PACI6pV1TZx4-83wuyR-",
+  "notification": {
+    "title":"hello",
+    "body":"indent"
+   }
+
+}
+curl -X POST --header "Authorization:Key= AAAAIxkchlo:APA91bFCQ9xPzraGC2tSySdPo7WED37UqCQPdBb3_P1s3b9kxVdKtg0PUw0iE67GSb80aZTIXWFKMLpBX1EVq_K8huqnHouQCkpqLzAVw3EIRSFdpTq0kDzIZBv2uX83rzDGiAyfafkN" --header "Content-Type:application/json" https://fcm.googleapis.com/fcm/send -d  "{ \"to\":\"fcpp5a4Gj0c:APA91bGsS9ZQoIsmb8-cmjxz-q0HQwiqm4aemIMWkU3ZSpJ_qziBS6jGwm2e5wElcon9Off0qxmoQWIFB5tUnFd7tiQfjnp85ZGscSZXGDMu_Tvue5xzX5p2PACI6pV1TZx4-83wuyR-\",\"notification\": {\"title\":\"hello\",\"body\":\"indent\"}}"
